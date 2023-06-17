@@ -9,8 +9,8 @@ int main(void)
 /* initializing the start of the first variable */
 char alp;
 char alb;
-alp = 'a'
-alb = 'A'
+alp = 'a';
+alb = 'A';
 while (alp <= 'z')
 {
 putchar (alp); alp++
