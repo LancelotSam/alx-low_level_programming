@@ -8,7 +8,8 @@ int main(void)
 {
 /* initializing the start of the first variable */
 char alp;
-for (alp = 'aA' ; alp <= 'zZ' ; alp++)
+for (alp = 'a' ; alp <= 'z' ; alp++)
+for (alp = 'Z' ; alp <= 'Z' ; alp++)
 {
 putchar (alp);
 }
