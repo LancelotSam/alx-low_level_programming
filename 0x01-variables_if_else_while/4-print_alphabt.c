@@ -8,8 +8,6 @@ int main(void)
 {
 /* initializing the start of the first variable */
 char alp;
-char e;
-char q;
 for (alp = 'a'; alp <= 'z'; alp++)
 {
 if (alp != 'e' && alp != 'q')
