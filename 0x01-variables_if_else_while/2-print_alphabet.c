@@ -7,10 +7,11 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char alphabet[26] = 'abcdefghijklmnopqrstuvwxyz';
-for int (i = 0 ; i <= 25 ; i++)
+char alphabet;
+for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
 {
-putchar (alphabet[i]);
+putchar (alphabet);
 }
+putchar ('/n');
 return (0);
 }
