@@ -13,11 +13,11 @@ alp = 'a';
 alb = 'A';
 while (alp <= 'z')
 {
-putchar (alp); alp++
+putchar (alp); alp++;
 }
 while (alb <= 'Z')
 {
-puchar (alb); alb++
+putchar (alb); alb++;
 }
 putchar('\n');
 return (0);
