@@ -8,11 +8,11 @@ int main(void)
 {
 /* initializing the start of the first variable */
 int num;
+char alp;
 for (num = 0; num < 10; num++)
 {
 putchar ((num % 10) + '0');
 }
-char alp;
 for (alp = 'a' ; alp <= 'f' ; alp++)
 {
 putchar (alp);
