@@ -7,7 +7,7 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char alp, e, q;
+char alp;
 for (alp = 'a' ; alp <= 'z' ; alp++)
 {
 if (alp != e && != q)
