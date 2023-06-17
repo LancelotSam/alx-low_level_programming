@@ -12,7 +12,7 @@ char e;
 char q;
 for (alp = 'a' ; alp <= 'z' ; alp++)
 {
-if (alp != e && != q)
+if (alp != 'e' && != 'q')
 putchar (alp);
 }
 putchar('\n');
