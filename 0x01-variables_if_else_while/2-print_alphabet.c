@@ -7,12 +7,10 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char alphabet = 'a';
-char alphabet = 'z';
-while (alphabet <= z)
+char alphabet = 'abcdefghijklmnopqrstuvwxyz';
+for int (i = 0 ; i <= 25 ; i++)
 {
-putchar (alphabet);
-alphabet++ ; /*increment a to move to the next varibale i.e b*/
+putchar (alphabet[i]);
 }
 return (0);
 }
