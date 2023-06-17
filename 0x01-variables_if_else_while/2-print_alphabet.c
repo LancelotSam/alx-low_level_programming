@@ -7,8 +7,8 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char  alphabet = 'a'
-
+char alphabet = 'a';
+char \n;
 while (alphabet <= z) /* using ascii values of aalphabets*/
 {
 putchar (alphabet);
