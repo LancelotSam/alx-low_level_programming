@@ -7,11 +7,10 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char alphabet;
-for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
+char alp;
+for (alp = 'a' ; alp <= 'z' ; alp++)
 {
-putchar (alphabet);
+putchar (alp);
 }
-putchar ('/n');
 return (0);
 }
