@@ -2,14 +2,18 @@
 /**
  * main-program entry point
  * printing alphabet in lowercase
- *Return: alphabets a-z (Success)
+ *Return: 0 (Success)
  */
 int main(void)
 {
-for (int x = 'a'; x <= 'Z'; x++) /* using ascii values of aalphabets*/
+/* initializing the start of the first variable */
+char  alphabet = 'a'
+
+while (alphabet <= z) /* using ascii values of aalphabets*/
 {
-char small = tolower(x);
-putchar(small);
+putchar (alphabet);
+alphabet++ ; /*increment a to move to the next varibale i.e b*/
 }
+putchar(\n);
 return (0);
 }
