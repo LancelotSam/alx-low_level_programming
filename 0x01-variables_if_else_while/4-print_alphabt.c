@@ -8,9 +8,11 @@ int main(void)
 {
 /* initializing the start of the first variable */
 char alp, e, q;
+e = 'e';
+q = 'q';
 for (alp = 'a' ; alp <= 'z' ; alp++)
-if (char != e && != q)
 {
+if (alp != e && != q)
 putchar (alp);
 }
 putchar('\n');
