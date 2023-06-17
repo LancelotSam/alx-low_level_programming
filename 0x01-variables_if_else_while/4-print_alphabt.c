@@ -10,9 +10,9 @@ int main(void)
 char alp;
 char e;
 char q;
-for (alp = 'a' ; alp <= 'z' ; alp++)
+for (alp = 'a'; alp <= 'z'; alp++)
 {
-if (alp != 'e' && != 'q')
+if (alp != 'e' && alp != 'q')
 putchar (alp);
 }
 putchar('\n');
