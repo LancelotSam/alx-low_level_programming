@@ -8,14 +8,16 @@ int main(void)
 {
 /* initializing the start of the first variable */
 char alp;
-for (alp = 'a' ; alp <= 'z' ; alp++)
-{
-putchar (alp);
-}
 char alb;
-for (alb = 'A' ; alb <= 'Z' ; alb++)
+alp = 'a'
+alb = 'A'
+while (alp <= 'z')
 {
-putchar (alb);
+putchar (alp); alp++
+}
+while (alb <= 'Z')
+{
+puchar (alb); alb++
 }
 putchar('\n');
 return (0);
