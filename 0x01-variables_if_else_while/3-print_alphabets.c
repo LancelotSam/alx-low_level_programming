@@ -12,10 +12,10 @@ for (alp = 'a' ; alp <= 'z' ; alp++)
 {
 putchar (alp);
 }
-char alp;
-for (alp = 'A' ; alp <= 'Z' ; alp++)
+char alb;
+for (alb = 'A' ; alb <= 'Z' ; alb++)
 {
-putchar (alp);
+putchar (alb);
 }
 putchar('\n');
 return (0);
