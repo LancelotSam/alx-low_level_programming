@@ -7,7 +7,7 @@
 int main(void)
 {
 /* initializing the start of the first variable */
-char alphabet = 'abcdefghijklmnopqrstuvwxyz';
+char alphabet[26] = 'abcdefghijklmnopqrstuvwxyz';
 for int (i = 0 ; i <= 25 ; i++)
 {
 putchar (alphabet[i]);
