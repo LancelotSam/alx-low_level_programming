@@ -9,7 +9,6 @@ int main(void)
 /*initialize the main program*/
 int i;
 for (i = 0; i <= 9; i++)
-if ( i != i)
 {/* check if digits are different*/
 putchar(i + '0');
 putchar(' ');
