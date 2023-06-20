@@ -12,5 +12,5 @@ for (alp = a; alp <= z; alp++)
 _putchar(alp);
 }
 _putchar('\n');
-return (write(1, &c, 1));
+return (0);
 }
