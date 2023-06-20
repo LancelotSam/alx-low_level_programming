@@ -4,12 +4,12 @@
  * Return: 0(success)
  */
 void print_alphabet(void);
-int main(char alp)
+int main(char c)
 {
-char alp;
-for (alp = a; alp <= z; alp++)
+char c;
+for (c = a; c <= z; c++)
 {
-_putchar(alp);
+_putchar(c);
 }
 _putchar('\n');
 return (0);
