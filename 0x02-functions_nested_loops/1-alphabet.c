@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * main-print alphabet in lowercase
  * Return: 0(success)
@@ -12,5 +12,5 @@ for (alp = a; alp <= z; alp++)
 _putchar(alp);
 }
 _putchar('\n');
-return (0);
+return (write(1, &c, 1));
 }
