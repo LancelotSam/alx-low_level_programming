@@ -1,16 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main-use putchar to print _putchar
- *@Parameter: use char
- * Return: (0) success
- *
- */
-char putchar(char '_putchar'); /*declaring the function putchar*/
+ * * Return: (0) success
+ * */
+char putchar('_putchar'); /*declaring the function putchar*/
 char main(void)
 {
+char _putchar;
 putchar(char);
-}
-putchar('\n')i;
+putchar('\n');
 Return(0);
 }
