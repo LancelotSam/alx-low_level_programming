@@ -1,7 +1,4 @@
-#include <stdio.h>
-#ifndef main.h
-#define main.h
-#endif
+#include <unistd.h>
 /**
  * main-use putchar to print _putchar
  * * Return: (0) success
