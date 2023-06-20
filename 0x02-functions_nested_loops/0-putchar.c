@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main-use putchar to print _putchar
  *@Parameter: use char
