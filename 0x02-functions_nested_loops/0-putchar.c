@@ -7,7 +7,7 @@
  *
  */
 void putchar(char);
-int main(void)
+char main(void)
 {
 char [] = '_putchar';
 {
