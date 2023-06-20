@@ -6,10 +6,8 @@
  * Return: (0) success
  *
  */
-void putchar(char);
+char putchar(char '_putchar'); /*declaring the function putchar*/
 char main(void)
-{
-char [] = '_putchar';
 {
 putchar(char);
 }
