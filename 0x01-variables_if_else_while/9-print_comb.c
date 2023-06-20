@@ -1,7 +1,9 @@
 #include <stdio.h>
 /*
- * main-create a program that creates a combination of,
+ * main-entry point
+ * Description:create a program that creates a combination of,
  * digits from 0-9
+ *@Parameter:Use for and incremet
  * Return: 0(Success)
  */
 int main(void)
@@ -11,7 +13,7 @@ int i;
 for (i = 0; i <= 9; i++)
 {/* check if digits are different*/
 putchar(i + '0');
-putchar (' ');
+putchar(' ');
 putchar(',');
 }
 return (0);
