@@ -4,11 +4,10 @@
  * main-use putchar to print _putchar
  * * Return: (0) success
 */
-char putchar(void); /*declaring the function putchar*/
+char _putchar(void); /*declaring the function putchar*/
 char main(void)
 {
-char _putchar;
-putchar(char);
-putchar('\n');
+_putchar(char);
+_putchar('\n');
 Return(0);
 }
