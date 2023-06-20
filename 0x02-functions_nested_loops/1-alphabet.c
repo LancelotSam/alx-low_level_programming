@@ -1,15 +1,14 @@
-#include <unistd.h>
+#include "main.h"
 /**
  * main-print alphabet in lowercase
  * Return: 0(success)
  */
 void print_alphabet(void);
-int main(void)
 {
-char c;
-for (c = a; c <= z; c++)
+int alp;
+for (alp = a; alp <= z; alp++)
 {
-_putchar(c);
+_putchar(alp);
 }
 _putchar('\n');
 return (0);
