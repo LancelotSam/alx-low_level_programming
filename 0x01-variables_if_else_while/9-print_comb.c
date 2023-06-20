@@ -11,7 +11,7 @@ int i;
 for (i = 0; i <= 9; i++)
 {/* check if digits are different*/
 putchar(i + '0');
-putchar (' ')
+putchar (' ');
 putchar(',');
 }
 return (0);
