@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *main-
- *Function:int _isupper
- *@Parameters:
+ *int _isupper-checks if numbers are uppercase
+ *@c- alphabet A-Z
  *Return:Returns 1 if c is uppercase,Returns 0 otherwise
  */
 int _isupper(int c)
