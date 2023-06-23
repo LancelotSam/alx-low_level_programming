@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main-checks if numbers are uppercase
- *Function:_isupper
+ *_isupper- this is the main function
  *
  *Description: checks if numbers are uppercase
  *@c: alphabet A-Z
