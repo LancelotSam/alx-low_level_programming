@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * Main-entry point
- * void print_numbers- prints numbers 0-9
- * @c: 0-9
+ *print_numbers - the main function
  *
- * Return: On success 0.
+ * prints numbers 0-9
+ * @c: 0
+ * @c:9
+ *Return:void.
  */
-void print_numbers(void)/*calling function from main*/
+void print_numbers(void)
 {
 	char c;
 
