@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * void print_line(int n)-to draw a straight line on the terminal
- * @c- n, _
- * Return: void
+ * print_line - this is the main function
+ *
+ * To draw a straight line on the terminal
+ * @n: the character to be printed
+ * Return: print line
  */
 void print_line(int n)
 {
@@ -14,12 +16,16 @@ void print_line(int n)
 	}
 	else
 	{
-		int i;
+		int i, j;
 
 		for (i = 1; i <= n; i++)
 		{
-			_putchar(n);
+			for (j = 1; j <= n; j++)
+				_putchar('_');
 		}
+	}
+	{
+		_putchar('\n');
 	}
 
 }
