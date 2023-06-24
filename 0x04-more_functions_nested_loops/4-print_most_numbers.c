@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * void print_most_numbers-print numbers apart from 2 & 4
- * @c: 0-9
+ * print_most_numbers- the main function
  *
- * Return: (Void)
+ * print numbers apart from 2 & 4
+ * @0-9
+ * * Return:void
  */
 void print_most_numbers(void)
 {
