@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * void print_diagonal(int n)-to print a diagonal line
- * @c-\
- * Return: void
+ * print_diagonal-this is the main function
+ *
+ * To print a diagonal line
+ * @\: the character to br printed
+ * Return: diagonal line
  */
 void print_diagonal(int n)
 {
@@ -14,13 +16,20 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		int i;
+		int i, j;
 
-		for (i = 0; i <= n;)
+		for (i = 0; i <= n; i++)
 		{
-			_putchar('\\');
-			_putchar('\n');
-			i++;
+			for (j = 0; j <= n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if ( j < i)
+					_putchar(' ');
+			}
+			{
+				_putchar('\n');
+			}
 		}
 	}
 }
