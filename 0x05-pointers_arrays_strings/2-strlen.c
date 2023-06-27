@@ -8,9 +8,9 @@
  */
 int _strlen(char *s)
 {
-	int length = 0;
+	int length = 0;/*initialzizing the value of the string*/
 
-	while (s[length] >= 1)
+	while (s[length] >= 1)/* while the value is above 0*/
 	{
 		length++;
 	}
