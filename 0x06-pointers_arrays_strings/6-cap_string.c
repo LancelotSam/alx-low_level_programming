@@ -3,36 +3,40 @@
  * *cap_string-this is the main function
  *
  * It capitalizes all the words of a string
- * @*:the string to be capitalized
+ * @str:the string to be capitalized
  * Return: capita;ized alphabets
  */
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i, j;
 	char che[] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; str[i]!='\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if(i == 0)
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')/*if 1st letter is lower*/
 		{
-			if((str[i] >= 'a' && str[i] <='z'))
-				str[i] = str[i] - 32;
+			str[i] = str[i] - 32;
 		}
-		if(str == che)/*check unwanted characters*/
+		for (j = 0; j <= 13; j++) /*For string Length of che*/
 		{
-			++i;
+			if (str[i] == che[j])/*check unwanted characters*/
+			{
+				++i;
+			}
 			/* check the next character if lowercase*/
-			if(str[i] >= 'a' && str[i] <= 'z')
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] = str[i] - 32; /*subtract 32 to make it capital*/
 			}
-		}
-		else
-		{
-			/*all other uppercase characters should be in lowercase*/
-			if(str[i] >= 'A' && str[i] <= 'Z')
-				str[i] = str[i] + 32; /*add 32 to make it lowercase*/
+			else
+			{
+				/*all other uppercase characters should be in lowercase*/
+				if (str[i] >= 'A' && str[i] <= 'Z')
+				{
+					str[i] = str[i] + 32; /*add 32 to make it lowercase*/
+				}
+			}
 		}
 	}
 	return (str);
