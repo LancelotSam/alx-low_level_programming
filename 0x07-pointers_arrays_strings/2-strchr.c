@@ -9,12 +9,17 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; i != '\0'; i++)
-	if (s[i] == c)
+	while (*s != '\0')/* while the string not end*/
 	{
-		return (s+ i);
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+	if (*s != c)/*checking for no occurence of our character*/
+	{
+		return ('\0');
 	}
 	return (0);
 }
