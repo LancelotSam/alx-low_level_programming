@@ -9,7 +9,7 @@
 int _strlen_recursion(char *s)
 {/*int len = _strlen_recursion(s);*/
 
-	if (*s)/* if the pointed value is non-zero or not ('\0')*/
+	if (*s == '\0')/* if the pointed value is non-zero or not ('\0')*/
 	{
 		return (0);
 	}
