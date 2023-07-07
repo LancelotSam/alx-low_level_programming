@@ -22,22 +22,21 @@ char *cap_string(char *str)
 		{
 			if (str[i] == che[j])/*check unwanted characters*/
 			{
-				++i;
-			}
-			/* check the next character if lowercase*/
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = str[i] - 32; /*subtract 32 to make it capital*/
-			}
-			else
-			{
-				/*all other uppercase characters should be in lowercase*/
-				if (str[i] >= 'A' && str[i] <= 'Z')
+				++i;/* check the next if lowercase*/
+				j++;
+				if (str[i] >= 'a' && str[i] <= 'z')
 				{
-					str[i] = str[i] + 32; /*add 32 to make it lowercase*/
+					str[i] = str[i] - 32; /*subtract 32 to make it capital*/
+				}
+				else
+				/*{all other uppercase characters should be in lowercase
+					if (str[i] >= 'A' && str[i] <= 'Z')*/
+					{
+						str[i] = str[i] + 32; /*add 32 to make it lowercase*/
+					}
 				}
 			}
-		}
+		/*}*/
 	}
-	return (str);
+return (str);
 }

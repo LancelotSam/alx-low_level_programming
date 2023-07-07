@@ -5,6 +5,7 @@
  *  concatenates two strings
  *  @dest:string to be concatenated
  *  @src:string to be concatenated
+ * @n: the integer value
  *  Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
