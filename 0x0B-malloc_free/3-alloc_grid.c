@@ -21,13 +21,15 @@ int **alloc_grid(int width, int height)
 	grid = malloc(sizeof(*grid) * height);
 	if (grid == NULL)/*memry allocation for all rows *height*/
 	{
+		free(grid);
 		return (NULL);
 	}
 	for (h = 0; h < height; h++)
 	{
 		grid[h] = malloc(sizeof(**grid) * width);
-		if(grid[h] == NULL)
+		if (grid[h] == NULL)
 		{
+			free(grid[h]);
 			return (NULL);
 		}
 	}
