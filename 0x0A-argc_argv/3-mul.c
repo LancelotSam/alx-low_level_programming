@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	for (z = 1; z < argc; z++)/*start from 1 since 0 is the name of program*/
 	{/* k * arvg[1] is wrong, integer vs pointer*/
-		result *= _atoi(argv[z]);
+		result *= strtol(argv[z], NULL, 10);
 	}
 	printf("%d\n", result);
 	return (0);
