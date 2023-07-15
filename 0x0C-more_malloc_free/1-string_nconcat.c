@@ -17,27 +17,36 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		s1 = "";
-		s2 = "";
+		return (NULL);
 	}
 	while (s1[len1] != '\0' && s2[len2] != '\0')
 	{
 		len1++;
 		len2++;
 	}
-	dest = malloc((n + 1) * sizeof(*dest));/*null byte*/
 	if (n >= len2)
 		dest = malloc(sizeof(char) * (len1 + len2 + 1));
 	else
 		dest = malloc(sizeof(char) * (len1 + n + 1));
 	if (dest == NULL)
 		return (NULL);
-	for (i = 0; i < len1; i++)
-		dest[i] = s1[i];
-		/*copy n bytes*/
-	for (j = 0; j < n; j++, i++)
+	while (i < len1)
 	{
-		dest[i] = s2[j];
+		dest[i] = s1[i];
+		i++;
+	}
+		/*copy n bytes*/
+        while (n < len2 && i < (len1 + n))
+	{/*copy n bytes*/
+                dest[i] = s2[j];
+        	i++;
+        	j++;
+	}
+        while (n >= len2 && i < (len1 + len2))
+ 	{/*copy entire len2*/
+                dest[i] = s2[j];
+        	i++;
+		j++;
 	}
 	dest[i] = '\0';
 	return (dest);
