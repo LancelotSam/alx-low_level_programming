@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
 	for (;argc < 3; argc++)
 	{/*(argc!=3)(argc < 3) same as (void) argc;*/
-		printf("Enter two positive numbers: ");
+		printf("Enter two positive numbers:");
 	}
 	if (scanf("%d%d", &num1, &num2) != 2)
 	{
