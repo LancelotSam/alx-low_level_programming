@@ -41,7 +41,7 @@ list_t *add_node(list_t **head, const char *str)
 	/*check if duplication was successful*/
 	if (new_head->str == NULL)
 	{
-		free(new_head->str);
+		free(new_head);
 		printf("String duplication failed\n");
 		return (NULL);
 	}
