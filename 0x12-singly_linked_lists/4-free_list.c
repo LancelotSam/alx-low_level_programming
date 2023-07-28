@@ -12,7 +12,9 @@ void free_list(list_t *head)
 
 	while (head != NULL)
 	{
+		/*store next pointer in temp before freeing*/
 		temp = head->next;/*temp now points to next*/
+		free(head->str);/*the string is allocated memory dynamically*/
 		free(head);/*current head is freed*/
 		head = temp;/*head now points to temp, if freed, it points to NULL*/
 	}
