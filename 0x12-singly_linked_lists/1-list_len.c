@@ -11,7 +11,7 @@ size_t list_len(const list_t *h)
 
 	unsigned int len = 0;/*defined in header but not initialized*/
 
-	while(h)/*if h is not NULL*/
+	while (h)/*if h is not NULL*/
 	{
 		len++;
 		h = h->next;/*access the next node*/
