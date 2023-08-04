@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		else if (*b == '0')/*if currently pointed is 0*/
 			conv = (conv << 1);/*a leftshift with no mask*/
 		/* or conv <<= 1*/
-		else 
+		else
 			return (0);
 		b++;
 	}
