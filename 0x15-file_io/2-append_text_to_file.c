@@ -57,5 +57,6 @@ int append_text_to_file(const char *filename, char *text_content)
 		perror("Error Appending");
 		close(fd);
 	}
+	close(fd);
 	return (1);
 }
