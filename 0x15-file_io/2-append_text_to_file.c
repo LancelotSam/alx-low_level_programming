@@ -1,22 +1,5 @@
 #include "main.h"
 /**
- * _strlen-this is the main function
- *
- * It calculates sthe length of a string
- * @str:the string whose length is to be determined
- * Return:length of string
- */
-int _strlen(char *str)
-{
-	int len = 0;
-
-	while (str[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
-}
-/**
  * append_text_to_file-this is the main function
  *
  * It appends text to a file
@@ -26,49 +9,26 @@ int _strlen(char *str)
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	ssize_t txt_cont_len;
-	int fd, appended;
+	int o, w, len = 0;
 
 	if (filename == NULL)
-	{
-		fprintf(stderr, "Filename is NULL\n");
 		return (-1);
+
+	if (text_content != NULL)
+	{
+		for (len = 0; text_content[len];)
+			len++;
 	}
 
-	if (access(filename, F_OK) == -1)
-	{
-		fprintf(stderr, "File does not exist\n");
+	o = open(filename, O_WRONLY | O_APPEND);
+	w = write(o, text_content, len);
+
+	if (o == -1 || w == -1)
 		return (-1);
-	}
 
-	if (text_content == NULL)
-	{
-		fprintf(stderr, "Text content is NULL\n");
-		return (-1);
-	}
+	close(o);
 
-	fd = open(filename, O_WRONLY | O_APPEND);
-
-	if (fd == -1)
-	{
-		perror("Error while opening the file");
-		return (-1);
-	}
-
-	txt_cont_len = _strlen(text_content);
-
-	appended = write(fd, text_content, txt_cont_len);
-
-	if (appended == -1)
-	{
-		perror("Error Appending");
-		close(fd);
-		return (-1);
-	}
-
-	close(fd);
-
-	return (0);
+	return (1);
 }
 
 /*int append_text_to_file(const char *filename, char *text_content)
