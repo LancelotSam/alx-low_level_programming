@@ -19,7 +19,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new_head->n = n;
 	new_head->prev = NULL;
 	new_head->next = *head; /**new head now points to the previous head**/
-	if (*head != NULL)
+	if (*head != NULL) /* not am empty list*/
 		(*head)->prev = new_head;
 	*head = new_head; /**make the new head the current head**/
 
