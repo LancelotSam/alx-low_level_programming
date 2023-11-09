@@ -5,7 +5,8 @@
  * @ht: this is teh hash table
  * @key: this is the key
  * @value: this is the value of the key
- * Return: 1 if successful, 0 otherwise, add node at start of list if collsion happens
+ * Return: 1 if successful, 0 otherwise,
+ * add node at start of list if collsion happens
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
